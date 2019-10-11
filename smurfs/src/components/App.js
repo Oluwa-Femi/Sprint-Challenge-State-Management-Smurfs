@@ -3,7 +3,8 @@ import axios from "axios"
 
 import "./App.css";
 import SmurfList from "./SmurfList"
-
+//for form
+import Form from "./Form"
 
 const App = () => {
   axios
@@ -14,6 +15,7 @@ const App = () => {
     return (
       <div className="App">
         <h1>SMURFS! 2.0 W/ Redux</h1>
+        <Form />
         <SmurfList />
       </div>
     );
