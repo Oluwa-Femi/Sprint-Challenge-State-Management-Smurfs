@@ -1,6 +1,12 @@
 import { FETCHING_SMURFS_START, FETCHING_SMURFS_SUCCESS, FETCHING_SMURFS_FAILURE } from "../actions/actions"
 const initialState = {
-    smurfs: [],
+    smurfs: [
+        {
+        name: "Brainey",
+        age: 200,
+        height: "5cm",
+        id: 0
+        }],
     isFetching: false,
     error: ""
 }
@@ -15,9 +21,10 @@ export const reducer = (state = initialState, action) => {
             }
 
         case FETCHING_SMURFS_SUCCESS:
+            console.log("suc")
             return {
                 ...state,
-                smurfs: action.payload.smurfs,
+                smurfs: action.payload.data,
                 isFetching: false,
                 error: ""
             }
