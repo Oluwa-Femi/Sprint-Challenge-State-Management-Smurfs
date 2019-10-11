@@ -21,7 +21,7 @@ export const reducer = (state = initialState, action) => {
             }
 
         case FETCHING_SMURFS_SUCCESS:
-                console.log("You are right, press on")
+                console.log(action)
             return {
                 ...state,
                 smurfs: action.payload.data,
