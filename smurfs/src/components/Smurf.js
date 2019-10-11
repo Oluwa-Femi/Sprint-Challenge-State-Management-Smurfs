@@ -3,7 +3,7 @@ const Smurf = (props) => {
 
     //Smurfs data rendered
     return (
-        <div>
+        <div class = "smurf">
             <p>{props.smurf.name}</p>
             <p>{props.smurf.age}</p>
             <p>{props.smurf.height}</p>
